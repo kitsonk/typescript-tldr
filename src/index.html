@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TypeScript TL;DR</title>
+</head>
+<body>
+	<h1>TypeScript TL;DR</h1>
+	<div id="message"></div>
+	<button id="button1" name="button1" type="button">Click Me!</button>
+	<script src="../../node_modules/@dojo/loader/loader.min.js"></script>
+	<script>
+		require.config({
+			packages: []
+		});
+
+		require([
+			'app'
+		], function (app) {
+			console.log(app);
+		});
+	</script>
+</body>
+</html>

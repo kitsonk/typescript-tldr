@@ -137,3 +137,22 @@ declare module 'istanbul/lib/instrumenter' {
 
 	export = Instrumenter;
 }
+
+declare module 'intern/dojo/node!leadfoot/helpers/pollUntil' {
+	/**
+	 *
+	 * @param poller The poller function to execute on an interval. The function should return `null` or
+	 *               `undefined` if there is not a result. If the poller function throws, polling will halt.
+	 * @param args An array of arguments to pass to the poller function when it is invoked. Only values that
+	 *             can be serialised to JSON, plus
+	 *             [leadfoot/Element](https://theintern.github.io/leadfoot/module-leadfoot_Element.html)
+	 *             objects, can be specified as arguments.
+	 * @param timeout The maximum amount of time to wait for a successful result, in milliseconds. If not
+	 *                specified, the current `executeAsync` maximum timeout for the session will be used.
+	 * @param pollInterval The amount of time to wait between calls to the poller function, in milliseconds.
+	 *                     If not specified, defaults to 67ms.
+	 */
+	function pollUntil(poller: Function | string, args?: any[], timeout?: number, pollInterval?: number): Promise<void>;
+
+	export = pollUntil;
+}
