@@ -1,0 +1,116 @@
+{
+	"rules": {
+		"adjacent-overload-signatures": true,
+		"ban-types": [ true, [ "Object", "Use {} instead." ], [ "String" ] ],
+		"no-inferrable-types": [ true ],
+		"prefer-for-of": true,
+		"typedef-whitespace": [
+			true,
+			{
+				"call-signature": "nospace",
+				"index-signature": "nospace",
+				"parameter": "nospace",
+				"property-declaration": "nospace",
+				"variable-declaration": "nospace"
+			}
+		],
+		"unified-signatures": true,
+		"curly": true,
+		"no-arg": true,
+		"no-bitwise": true,
+		"no-conditional-assignment": true,
+		"no-construct": true,
+		"no-debugger": true,
+		"no-duplicate-super": true,
+		"no-duplicate-variable": true,
+		"no-eval": true,
+		"no-unsafe-finally": true,
+		"no-unused-variable": [
+			true
+		],
+		"no-var-keyword": true,
+		"radix": true,
+		"switch-default": true,
+		"triple-equals": [
+			true
+		],
+		"typeof-compare": true,
+		"use-isnan": true,
+		"cyclomatic-complexity": [ true, 20 ],
+		"eofline": true,
+		"indent": [
+			true, "tabs"
+		],
+		"prefer-const": true,
+		"trailing-comma": [
+			true,
+			{
+				"multiline": "never",
+				"singleline": "never"
+			}
+		],
+		"array-type": [
+			true,
+			"array"
+		],
+		"arrow-parens": true,
+		"arrow-return-shorthand": true,
+		"class-name": true,
+		"comment-format": [
+			true,
+			"check-space"
+		],
+		"import-spacing": true,
+		"jsdoc-format": true,
+		"new-parens": true,
+		"no-consecutive-blank-lines": [
+			true
+		],
+		"no-parameter-properties": true,
+		"no-trailing-whitespace": true,
+		"no-unnecessary-initializer": true,
+		"object-literal-shorthand": true,
+		"one-variable-per-declaration": [
+			true
+		],
+		"quotemark": [
+			true,
+			"single",
+			"avoid-escape"
+		],
+		"ordered-imports": [
+			true,
+			{
+				"import-sources-order": "case-insensitive",
+				"named-imports-order": "case-insensitive"
+			}
+		],
+		"prefer-method-signature": true,
+		"semicolon": [
+			true,
+			"always"
+		],
+		"space-before-function-paren": [
+			true,
+			"anonymous",
+			"named"
+		],
+		"variable-name": [
+			true,
+			"check-format",
+			"allow-pascal-case",
+			"allow-leading-underscore",
+			"ban-keywords"
+		],
+		"whitespace": [
+			true,
+			"check-branch",
+			"check-decl",
+			"check-operator",
+			"check-module",
+			"check-separator",
+			"check-type",
+			"check-typecast"
+		]
+	}
+}
