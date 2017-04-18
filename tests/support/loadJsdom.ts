@@ -14,7 +14,11 @@ const doc = jsdom.jsdom(`
 		<!DOCTYPE html>
 		<html>
 		<head></head>
-		<body></body>
+		<body>
+			<h1>TypeScript TL;DR</h1>
+			<div id="message"></div>
+			<button id="button1" name="button1" type="button">Click Me!</button>
+		</body>
 		<html>
 	`, {
 		/* direct the console of the document to the NodeJS console */
